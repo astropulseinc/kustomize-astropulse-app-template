@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: astropulse-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: astropulse-app
+  template:
+    metadata:
+      labels:
+        app: astropulse-app
+    spec:
+      containers:
+      - image: hello-world:latest
+        name: astropulse-app
+        ports:
+        - containerPort: 80
