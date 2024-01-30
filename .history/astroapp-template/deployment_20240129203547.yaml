@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: astropulse-app
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: app
+      app: astropulse-app
   template:
     metadata:
       labels:
-        app: app
+        app: astropulse-app
     spec:
       containers:
       - image: hello-world:latest
