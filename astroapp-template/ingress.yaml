@@ -6,6 +6,10 @@ metadata:
     external-dns.alpha.kubernetes.io/ttl: "10"
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+      - UPDATE
+      secretName: tls-secret
   rules:
   - host: UPDATE
     http:
