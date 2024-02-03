@@ -1,0 +1,3 @@
+.history/
+astroapp-template/ingress-patch.yaml
+astroapp-template/secret-patch.yaml
