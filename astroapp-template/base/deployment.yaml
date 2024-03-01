@@ -19,7 +19,11 @@ spec:
         ports:
         - containerPort: 80
       tolerations:
-      - key: "apps.astropulse.io/purchase-option"
+      - key: "node.cluster.platform.astropulse.io/purchase-option"
         operator: "Equal"
         value: "ondemand"
+        effect: "NoSchedule"
+      - key: "node.cluster.platform.astropulse.io/type"
+        operator: "Equal"
+        value: "dataplane"
         effect: "NoSchedule"
