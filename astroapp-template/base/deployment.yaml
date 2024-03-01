@@ -18,3 +18,8 @@ spec:
         name: astropulse-app
         ports:
         - containerPort: 80
+      tolerations:
+      - key: "apps.astropulse.io/purchase-option"
+        operator: "Equal"
+        value: "ondemand"
+        effect: "NoSchedule"
