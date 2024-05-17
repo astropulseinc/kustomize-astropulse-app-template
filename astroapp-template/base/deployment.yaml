@@ -4,6 +4,10 @@ metadata:
   name: app
 spec:
   replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
