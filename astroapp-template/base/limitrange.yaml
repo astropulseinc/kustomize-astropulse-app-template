@@ -2,7 +2,7 @@ apiVersion: v1
 kind: LimitRange
 metadata:
   annotations:
-    astropulse.io/created-by: "astroapp-template"
+    platform.astropulse.io/created-by: "astroapp-template"
     argocd.argoproj.io/sync-options: Replace=true
   name: limitrange
 spec:
