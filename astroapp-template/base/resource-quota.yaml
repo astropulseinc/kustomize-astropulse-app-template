@@ -1,6 +1,9 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
+  annotations:
+    platform.astropulse.io/created-by: "astroapp-template"
+    argocd.argoproj.io/sync-options: Replace=true
   name: quota
 spec:
   hard:
