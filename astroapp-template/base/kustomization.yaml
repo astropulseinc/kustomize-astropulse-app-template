@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-- ingress.yaml
 - secret.yaml
 - limitrange.yaml
 - resource-quota.yaml
